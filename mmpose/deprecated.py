@@ -11,7 +11,6 @@ from .models.heads import (AEHigherResolutionHead, AESimpleHead,
                            TopdownHeatmapMultiStageHead,
                            TopdownHeatmapSimpleHead)
 
-
 @DATASETS.register_module()
 class TopDownFreiHandDataset(Kpt2dSviewRgbImgTopDownDataset):
     """Deprecated TopDownFreiHandDataset."""

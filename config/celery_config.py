@@ -13,8 +13,8 @@ def route_task(name, args, kwargs, options, task=None, **kw):
 
 class BaseConfig:
     config = dotenv_values(".env")
-    CELERY_BROKER_URL: str = os.environ.get("CELERY_BROKER_URL",config["CELERY_BROKER_URL"])
-    CELERY_RESULT_BACKEND: str = os.environ.get("CELERY_RESULT_BACKEND", config["CELERY_RESULT_BACKEND"])
+    CELERY_BROKER_URL: str = os.environ.get("CELERY_BROKER_URL","amqp://guest:guest@localhost:5672//")
+    CELERY_RESULT_BACKEND: str = os.environ.get("CELERY_RESULT_BACKEND", "rpc://")
     FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024
 
     CELERY_TASK_QUEUES: list = (

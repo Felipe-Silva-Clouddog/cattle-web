@@ -1,0 +1,49 @@
+fastapi==0.73.0
+uvicorn[standard]==0.17.4
+celery==5.2.3
+flower==1.0.0
+httpx==0.21.1
+python-multipart
+
+# PyTorch dependencies
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.10.0+cu111
+torchvision==0.11.0+cu111
+torchaudio==0.10.0
+
+# Common scientific libraries
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+gunicorn
+uvloop
+httptools
+opencv-python
+opencv-python-headless
+
+# mmdet dependencies
+joblib
+pycocotools
+six
+terminaltables
+
+# mmpose dependencies
+chumpy
+dataclasses; python_version == '3.7'
+json_tricks
+munkres
+pillow
+xtcocotools>=1.8
+
+# mmseg dependencies
+mmcls>=0.20.1
+packaging
+prettytable
+
+# Database dependencies
+sqlalchemy
+psycopg2-binary
+mmcv>=2.0.0rc4,<=2.3.0
+mmengine>=0.6.0,<=1.0.0

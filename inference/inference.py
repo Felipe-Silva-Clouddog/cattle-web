@@ -1,8 +1,17 @@
 
+import sys
+import os
+
+# Check if mmpose models module exists
+
 import numpy as np
 import random
 import joblib
 from PIL import Image
+print("Before importing mmpose.apis")
+from mmpose.apis import inference_top_down_pose_model, init_pose_model
+print("After importing mmpose.apis")
+from mmpose.apis import (inference_top_down_pose_model, init_pose_model)
 from mmpose.apis import (inference_top_down_pose_model, init_pose_model,
                         process_mmdet_results)
 from mmdet.apis import inference_detector, init_detector
