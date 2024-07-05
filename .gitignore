@@ -125,8 +125,7 @@ venv.bak/
 dmypy.json
 
 #custom
-models/
-images/
+models/v1
 image_bak_oct_4/
 venv/
 venv.zip
